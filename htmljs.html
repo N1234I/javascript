@@ -11,51 +11,29 @@
 </head>
 
 <body>
-   <h1 id="tital">Drum Kit</h1>
-   <div class="set">
-    <button onclick="w()" class="w drum">w</button>
-    <button onclick="a()" class="a drum">a</button>
-    <button onclick="s()" class="s drum">s</button>
-    <button onclick="d()" class="d drum">d</button>
-    <button onclick="j()" class="j drum">j</button>
-    <button onclick="k()" class="k drum">k</button>
-    <button onclick="l()" class="l drum">l</button>
+     
+  <h1>Dynamic Content Example</h1>
+  <input type="text" id="textInput" placeholder="Enter text">
+  <button id="addButton">Add</button>
+  <div id="outputContainer">
+      <!-- This is where the <p> tags will be added -->
   </div>
 
- 
-  <script>
-   function w(){
-      var audio = new Audio("New folder/sound1.mp3");
-         audio.play();
-    }
-    function a(){
-      var audio = new Audio("New folder/sound2.mp3");
-         audio.play();
-    }
-    function s(){
-      var audio = new Audio("New folder/sound3.mp3");
-         audio.play();
-    }
-    function d(){
-      var audio = new Audio("New folder/sound4.mp3");
-         audio.play();
-    }
-    function j(){
-      var audio = new Audio("New folder/sound5.mp3");
-         audio.play();
-    }
-    function k(){
-      var audio = new Audio("New folder/sound6.mp3");
-         audio.play();
-    }
-    function l(){
-      var audio = new Audio("New folder/sound8.mp3");
-         audio.play();
-    }
+     
+     <script>
+        const textInput=document.getElementById("textInput");
+        const addbutton=document.getElementById("addButton");
+        const outputtcontainer=document.getElementById("outputContainer");
 
+        addbutton.addEventListener("click",() => {
+          const newtext=textInput.value;
+          const newpara=document.createElement("p");
+          newpara.textContent=newtext;
+          outputContainer.appendChild(newpara);
+          textInput.value="";
+        })
 
-
-  </script>
-
+        
+     </script>
 </body>
 </html>
