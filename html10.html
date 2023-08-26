@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./cssjs.css" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+</head>
+<body>
+    <div id="main">
+    <div id="circul">
+       <div id="square">
+
+       </div>
+    </div>
+    <div class="div">
+    <button id="button1">change color</button>
+    </div>
+    <div class="div">
+        <button id="button2">change shape</button>
+    </div>
+    <script>
+        const circul=document.getElementById("circul");
+        const square=document.getElementById("square");
+        const button1=document.getElementById("button1");
+        const button2=document.getElementById("button2");
+        let isSquare=true;
+        button1.addEventListener("click",()=>{
+             const randomcolor= '#' + Math.floor(Math.random()*16777215).toString(16);
+             circul.style.backgroundColor=randomcolor;
+        });
+        button2.addEventListener("click",()=>{
+          if (isSquare) {
+                
+                square.style.width = '150px';
+                square.style.height = '80px';
+            } else {
+                
+                square.style.width = '100px';
+                square.style.height = '100px';
+            }
+            isSquare = !isSquare;
+            
+        });
+    </script>
+    </div>
+</body>
