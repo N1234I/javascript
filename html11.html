@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./cssjs.css" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+</head>
+<body>
+    <h1 id="container">press any key</h1>
+    <script>
+          const ans=document.getElementById("container");
+          document.addEventListener("keydown",function(event){
+            let h1=document.createElement("h1");
+            h1.innerText=`You Pressed ${event.key}`;
+            let p=document.createElement("p");
+            p.innerText=`${event.keyCode}`;
+            container.appendChild(h1);
+            container.appendChild(p);
+          })
+    </script>
+</body>
