@@ -1,0 +1,68 @@
+body{
+    width: 100%;
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-image: url("https://media.gettyimages.com/photos/mix-cut-fruits-in-plates-on-ice-slab-picture-id1325602477");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1% 0%;
+}
+#form-container>h1{
+    text-align: center;
+    height: 10%;
+    margin: 0%;
+}
+input{
+    border: 2px solid black;
+}
+select{
+    border: 2px solid black;
+}
+#calc{
+    border: 2px solid black;
+}
+#form-container{
+    width: 30%;
+    height: 100%;
+    background-color: white;
+    padding: 1%;
+    background-color: white;
+}
+#form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 90%;
+    background-color: white;
+}
+label{
+    font-size: 130%;
+    font-weight: bolder;
+    color: maroon;
+}
+.form .label{
+    margin-bottom: 30px;
+}
+#calc{
+    background-color: maroon;
+    width: 100%;
+    padding: 4% 0%;
+    font-size: 130%;
+    color: white;
+    border: 2px solid gray;
+}
+h1{
+    
+    color: maroon;
+    
+}
+#form-container h1{
+    font-size: 200%;
+    font-weight: bolder;
+}
